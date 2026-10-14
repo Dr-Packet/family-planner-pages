@@ -1,112 +1,57 @@
-# Public Pages
+# Family Planner public pages
 
-This repository contains a minimal static site for public-facing documentation and verification pages.
+This repository contains the public documentation and legal pages for Family Planner, a private household planning application.
 
 ## Purpose
 
-The public site is intended to satisfy public-facing documentation requirements for app verification, privacy information, and terms while keeping the main application private.
+The site is published using GitHub Pages at https://blackholesec.tech and is intended to provide public information for Google OAuth verification and general project documentation. The actual application is private and remains outside this repository.
 
 ## Files
 
-- `.gitlab-ci.yml` – Pages deployment pipeline
-- `public/index.html` – homepage
-- `public/privacy/index.html` – privacy policy
-- `public/terms/index.html` – terms
-- `public/styles.css` – shared styling
+- `public/index.html` — homepage describing the project, Google sign-in, and Google Calendar usage
+- `public/privacy/index.html` — privacy policy draft for owner confirmation
+- `public/terms/index.html` — terms page
+- `public/styles.css` — shared stylesheet
 
-## Requirements covered
+## Deployment
 
-- Static site only
-- Deployment from the default branch
-- No Node.js or build tools
-- Custom domain support
-- Public-facing documentation for verification
-- No secrets, credentials, or tracking code
+This repository is deployed with GitHub Pages using the default branch. The production domain is:
 
-## GitLab setup
+- https://blackholesec.tech
 
-1. Create a new GitLab project.
-2. Add this repository as the project content, or initialize the project and push the files from your local clone.
-3. Ensure the default branch is the branch you want to publish.
-4. In GitLab, go to Settings > Pages and configure the custom domain if you plan to use one.
-5. Keep the Pages content public while keeping the main application private.
+Use GitHub Pages settings to publish the site from the repository root or the `public/` output directory as configured for the project.
 
-## Publish GitLab Pages
+## Google OAuth verification requirements
 
-Create a local Git repository and push the files, for example:
+This public site should clearly explain:
 
-```bash
-git init
-git checkout -b main
-git add .
-git commit -m "Add public pages site"
-git remote add origin git@gitlab.com:YOUR_USERNAME/public-pages.git
-git push -u origin main
-```
+- what Family Planner does
+- who it is for
+- that it is a private household planning application
+- why Google sign-in is used
+- how Google Calendar access is used
+- that the app is not an AI imagery application
+- that it does not generate, modify, or distribute AI-generated intimate imagery
+- a privacy policy and terms page for the public site
 
-GitLab will run the Pages job automatically from `.gitlab-ci.yml` and publish the contents of `public/`.
+## Notes
 
-## Custom domain and DNS
+- No secrets, credentials, tokens, or private configuration are stored in this repository.
+- The actual app is private and is not intended to be publicly accessible.
+- The privacy and terms content must be reviewed and confirmed by the owner before final publication.
+- This repository does not contain the private Family Planner app or OAuth client secret material.
 
-Use a custom domain such as:
+## Local validation
 
-- `app.example.com`
+Check the static site files to confirm that:
 
-Set DNS records with your DNS provider. Typical setup:
+- the homepage explains the application clearly
+- stylesheet links resolve correctly
+- Privacy Policy and Terms links work
+- no GitLab references remain
+- no placeholder verification wording remains
+- no credentials or sensitive configuration are included
 
-- `A` record or `ALIAS`/`ANAME` to the GitLab Pages IPs provided by GitLab
-- or a `CNAME` record pointing to the GitLab Pages hostname
+## Validation status
 
-Check GitLab’s current Pages documentation for the exact records it expects for your domain.
-
-## HTTPS and verification
-
-1. In GitLab, add the custom domain under Settings > Pages.
-2. GitLab will request verification and issue or provision an HTTPS certificate.
-3. Wait until GitLab shows the domain as verified.
-4. Make sure the Pages site is publicly accessible and the custom domain resolves correctly.
-
-## Domain verification
-
-If the domain is being used with external verification or sign-in flows, verify domain ownership in the relevant provider using the DNS method or the method recommended by that provider.
-
-## Manual actions required
-
-Before final launch, the owner must complete the following:
-
-- confirm the exact OAuth or authentication configuration
-- confirm the exact scopes used
-- confirm the final private app URL and redirect URIs
-- add the correct domain to GitLab Pages
-- verify ownership in the required provider or console
-- confirm the app’s privacy and deletion workflow
-
-## Testing the published site
-
-After deployment, open each URL and verify:
-
-```text
-https://app.example.com/
-https://app.example.com/privacy/
-https://app.example.com/terms/
-```
-
-Verify:
-
-- each page loads correctly
-- navigation links work
-- styling is clean and readable
-- the pages are publicly accessible
-- no private network or internal details are exposed
-
-## Security notes
-
-- no credentials, tokens, or secrets are stored in this repository
-- no tracking or analytics scripts are included
-- no JavaScript is required for the site to function
-- the public Pages site is intentionally simple and static
-- private application internals remain hidden behind the main network or private infrastructure
-
-## Final note
-
-This project is intentionally minimal and meant to satisfy public documentation requirements for a private app or service. The owner should review and adapt the privacy and terms content before launch.
+The repository content was reviewed for the required Google verification fixes. Live URL verification was not performed from this environment, so no claim is made that the production site has already passed Google review.

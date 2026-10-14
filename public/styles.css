@@ -1,105 +1,229 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Terms of use for Family Planner, a private family dashboard with Google sign-in and calendar integration."
-    />
-    <title>Terms | Family Planner</title>
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container nav">
-        <div class="brand">Family Planner</div>
-        <nav aria-label="Main navigation">
-          <a href="../">Home</a>
-          <a href="../privacy/">Privacy Policy</a>
-          <a href="./">Terms</a>
-        </nav>
-      </div>
-    </header>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+  line-height: 1.7;
+}
 
-    <main class="content-page">
-      <div class="container narrow">
-        <h1>Terms</h1>
+* {
+  box-sizing: border-box;
+}
 
-        <p>
-          These terms apply to the Family Planner project and its public website,
-          which is intended for documentation, verification, and general public
-          information. The actual application may be private and hosted behind a
-          home network or Tailscale access.
-        </p>
+img {
+  max-width: 100%;
+}
 
-        <h2>1. Use of the service</h2>
-        <p>
-          Family Planner is designed for household scheduling, routines, chores,
-          rewards, allowance tracking, and related family planning activities.
-          Users should use the service responsibly and only with appropriate
-          authorization.
-        </p>
+a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
 
-        <h2>2. Google sign-in and calendar access</h2>
-        <p>
-          Google sign-in and any Google Calendar access are provided through
-          Google services and subject to Google’s terms and permissions. The app
-          owner is responsible for ensuring that the app requests only the access
-          it needs and that all required consent flows are properly configured.
-        </p>
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
 
-        <h2>3. Data responsibility</h2>
-        <p>
-          The owner of the private Family Planner application is responsible for
-          the data it stores, including user accounts, household information, and
-          any calendar data that is imported or created through the app.
-        </p>
+.container {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto;
+}
 
-        <h2>4. Availability</h2>
-        <p>
-          This public website and the private application may be unavailable at
-          times due to maintenance, connectivity issues, updates, or other
-          circumstances outside the owner’s direct control.
-        </p>
+.site-header {
+  background: #123a5f;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
 
-        <h2>5. No warranty</h2>
-        <p>
-          This website is provided for informational and verification purposes.
-          The owner makes no guarantee of continuous availability, data accuracy,
-          or perpetual support for a private application not publicly exposed.
-        </p>
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
 
-        <h2>6. Owner responsibilities</h2>
-        <p>
-          The owner is responsible for configuration, security, access controls,
-          app updates, domain setup, and compliance with applicable laws and
-          platform policies for the actual Family Planner application.
-        </p>
+.brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
 
-        <h2>7. Changes</h2>
-        <p>
-          These terms may be updated as the project evolves. The public Pages site
-          should be kept accurate and current for any required verification or
-          app-profile documentation.
-        </p>
+.nav nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
 
-        <p class="muted-note">
-          This is a simple public terms template. The owner should replace it with
-          a final version that matches the actual deployed Family Planner app and
-          its legal requirements before broad public use.
-        </p>
-      </div>
-    </main>
+.nav nav a,
+.site-footer a {
+  color: #eaf2ff;
+}
 
-    <footer class="site-footer">
-      <div class="container footer-row">
-        <span>Family Planner</span>
-        <div>
-          <a href="../">Home</a>
-          <a href="../privacy/">Privacy Policy</a>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
+.hero {
+  padding: 4rem 0 3rem;
+  background: linear-gradient(180deg, #f4f8ff 0%, #eef3fb 100%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #45638e;
+}
+
+h1,
+h2,
+h3 {
+  color: #10263d;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.lead.secondary {
+  color: #425466;
+}
+
+.cta-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.8rem 1.3rem;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover,
+.button:focus {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.button.primary {
+  background: #1d4ed8;
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(29, 78, 216, 0.22);
+}
+
+.button.secondary {
+  background: #ffffff;
+  color: #123a5f;
+  border: 1px solid #dbe7f5;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #dfe7f3;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 22px rgba(12, 27, 45, 0.06);
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #1f2937;
+}
+
+.card li + li {
+  margin-top: 0.5rem;
+}
+
+.info-section {
+  padding: 3rem 0;
+}
+
+.muted {
+  background: #edf3fb;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.narrow {
+  max-width: 760px;
+}
+
+.content-page {
+  padding: 3rem 0 4rem;
+}
+
+.muted-note {
+  background: #f1f5f9;
+  border-left: 4px solid #6589bd;
+  border-radius: 0.5rem;
+  padding: 1rem 1.1rem;
+  color: #334155;
+}
+
+.site-footer {
+  background: #10263d;
+  color: #ffffff;
+  padding: 1.1rem 0;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-row div {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 760px) {
+  .hero-grid,
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .nav,
+  .footer-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav nav,
+  .footer-row div {
+    gap: 0.75rem;
+  }
+}
