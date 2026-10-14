@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Terms of use for Family Planner, a private family dashboard with Google sign-in and calendar integration."
+    />
+    <title>Terms | Family Planner</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">Family Planner</div>
+        <nav aria-label="Main navigation">
+          <a href="../">Home</a>
+          <a href="../privacy/">Privacy Policy</a>
+          <a href="./">Terms</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="content-page">
+      <div class="container narrow">
+        <h1>Terms</h1>
+
+        <p>
+          These terms apply to the Family Planner project and its public website,
+          which is intended for documentation, verification, and general public
+          information. The actual application may be private and hosted behind a
+          home network or Tailscale access.
+        </p>
+
+        <h2>1. Use of the service</h2>
+        <p>
+          Family Planner is designed for household scheduling, routines, chores,
+          rewards, allowance tracking, and related family planning activities.
+          Users should use the service responsibly and only with appropriate
+          authorization.
+        </p>
+
+        <h2>2. Google sign-in and calendar access</h2>
+        <p>
+          Google sign-in and any Google Calendar access are provided through
+          Google services and subject to Google’s terms and permissions. The app
+          owner is responsible for ensuring that the app requests only the access
+          it needs and that all required consent flows are properly configured.
+        </p>
+
+        <h2>3. Data responsibility</h2>
+        <p>
+          The owner of the private Family Planner application is responsible for
+          the data it stores, including user accounts, household information, and
+          any calendar data that is imported or created through the app.
+        </p>
+
+        <h2>4. Availability</h2>
+        <p>
+          This public website and the private application may be unavailable at
+          times due to maintenance, connectivity issues, updates, or other
+          circumstances outside the owner’s direct control.
+        </p>
+
+        <h2>5. No warranty</h2>
+        <p>
+          This website is provided for informational and verification purposes.
+          The owner makes no guarantee of continuous availability, data accuracy,
+          or perpetual support for a private application not publicly exposed.
+        </p>
+
+        <h2>6. Owner responsibilities</h2>
+        <p>
+          The owner is responsible for configuration, security, access controls,
+          app updates, domain setup, and compliance with applicable laws and
+          platform policies for the actual Family Planner application.
+        </p>
+
+        <h2>7. Changes</h2>
+        <p>
+          These terms may be updated as the project evolves. The public Pages site
+          should be kept accurate and current for any required verification or
+          app-profile documentation.
+        </p>
+
+        <p class="muted-note">
+          This is a simple public terms template. The owner should replace it with
+          a final version that matches the actual deployed Family Planner app and
+          its legal requirements before broad public use.
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <span>Family Planner</span>
+        <div>
+          <a href="../">Home</a>
+          <a href="../privacy/">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
