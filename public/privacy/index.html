@@ -26,107 +26,147 @@
       <div class="container narrow">
         <h1>Privacy Policy</h1>
         <p>
-          This privacy policy explains how Family Planner may use Google login and
-          Google Calendar data for the private family dashboard described on this
-          website.
+          Family Planner is a private family dashboard for household routines,
+          chores, rewards, and shared scheduling. This repository contains the
+          public documentation and verification pages for the project. The actual
+          Family Planner application and its Google OAuth implementation are not
+          hosted in this repository.
         </p>
 
-        <h2>1. Information we may receive from Google</h2>
+        <h2>1. Scope of this notice</h2>
         <p>
-          Family Planner may use Google authentication to allow a user to sign in
-          with their Google account. This may include the user’s Google account
-          identity information needed to confirm access, such as a name, email
-          address, and basic profile data required by Google’s sign-in service.
-        </p>
-        <p>
-          If the application is configured to access Google Calendar, it may also
-          receive access to calendar data that is explicitly authorized by the user
-          through Google’s consent flow. Access is limited to the permissions the
-          app requests and the user approves.
+          This public policy is intentionally limited to the information available
+          in this repository. The actual Google OAuth and Calendar configuration,
+          storage location, retention policy, and deletion process must be
+          confirmed by the app owner before this notice is published as a final
+          product privacy policy.
         </p>
 
-        <h2>2. How data is used</h2>
+        <h2>2. Google data that may be involved</h2>
         <p>
-          Family Planner may use Google account information and calendar data for
-          ordinary app functionality, such as:
+          When Google sign-in is enabled, Family Planner may rely on Google
+          account information returned by Google’s sign-in flow, such as the
+          user’s Google account identifier, email address, and profile details
+          that Google makes available to the app. The exact data returned depends
+          on the OAuth configuration and the scopes granted by the user.
         </p>
+        <p>
+          If Google Calendar access is enabled, the app may request one or more
+          Calendar API scopes to read calendar data or to create, update, or
+          manage calendar entries. The exact scopes, event fields, and whether
+          the app can write to calendar data must be confirmed by the owner
+          before publication.
+        </p>
+
+        <h2>3. Why this data is used</h2>
+        <p>
+          Google account information may be used to identify the user and allow
+          access to the private Family Planner application. Calendar access, if
+          enabled, may be used to display or coordinate household scheduling,
+          reminders, or shared events. The exact purpose for each data element
+          must be confirmed by the app owner before a final policy is published.
+        </p>
+
+        <h2>4. Where data is stored</h2>
+        <p>
+          This public GitHub Pages site stores only static documentation and does
+          not store user accounts, OAuth tokens, or calendar data.
+        </p>
+        <p>
+          The actual Family Planner application and any data it stores are managed
+          outside this repository. The exact storage location, database system,
+          and hosting environment must be confirmed by the owner before the final
+          privacy policy is published.
+        </p>
+
+        <h2>5. Calendar data and persistence</h2>
+        <p>
+          This repository does not document whether any Google Calendar data is
+          cached, stored, or persisted by the private app. If the application
+          stores or copies calendar data, the owner must confirm which event
+          fields are retained, where they are stored, and whether they are kept in
+          a database or a cache.
+        </p>
+
+        <h2>6. Retention and deletion</h2>
+        <p>
+          The public GitHub Pages site does not retain personal data. The private
+          Family Planner application’s retention period for Google account data,
+          OAuth tokens, and any calendar data is not documented in this
+          repository.
+        </p>
+        <p>
+          The owner must confirm the actual retention schedule, deletion process,
+          and any automated cleanup rules before publication. Users may revoke
+          Google access through their Google Account security settings. The app
+          owner must also confirm the user-facing deletion process for account
+          removal and data erasure inside the private application.
+        </p>
+
+        <h2>7. Sharing and disclosure</h2>
+        <p>
+          This public site does not sell, trade, or share personal information for
+          advertising or analytics. Any sharing of personal data by the private
+          Family Planner application depends on its actual implementation and
+          hosting configuration, which is not documented in this repository.
+        </p>
+        <p>
+          The owner must confirm whether data is shared with third-party services,
+          infrastructure providers, backups, or vendors before a final policy can
+          be published.
+        </p>
+
+        <h2>8. Security</h2>
+        <p>
+          The public GitHub Pages site is static HTML and does not process user
+          sign-ins or tokens. The private Family Planner application’s security
+          protections, including access controls, encryption, API protections, and
+          token storage, are not documented in this repository.
+        </p>
+        <p>
+          The owner must confirm the actual security measures before a final
+          privacy policy is published.
+        </p>
+
+        <h2>9. User controls and privacy requests</h2>
+        <p>
+          Users can revoke Google access by visiting the Google Account permissions
+          page and removing Family Planner from the connected apps list.
+        </p>
+        <p>
+          To request deletion of any account or family data stored by the private
+          app, users must use the contact method published by the application.
+          This repository does not currently include a verified privacy contact
+          address.
+        </p>
+
+        <h2>10. Contact</h2>
+        <p>
+          For questions about this project or privacy requests, use the contact
+          method published on the Family Planner application or on the owner’s
+          final public product site. This repository does not include a verified
+          user-facing contact address.
+        </p>
+
+        <h2>11. Facts that must be confirmed before publication</h2>
         <ul>
-          <li>authenticating users to the private application</li>
-          <li>displaying calendar events relevant to family scheduling</li>
-          <li>helping keep household tasks and shared events organized</li>
+          <li>Exact Google OAuth scopes and Calendar scopes used by the app</li>
+          <li>What Google account data and Calendar fields are accessed</li>
+          <li>Why each data category is required for the app to function</li>
+          <li>Where OAuth tokens and account information are stored</li>
+          <li>Whether Calendar data is cached, copied, or persisted</li>
+          <li>Actual retention periods and deletion procedures</li>
+          <li>Whether any data is shared with third parties or vendors</li>
+          <li>Actual security controls implemented by the private app</li>
+          <li>How users revoke Google access and request account deletion</li>
+          <li>Real privacy contact information for user support</li>
         </ul>
-        <p>
-          This public GitLab Pages site does not collect or process personal data
-          for analytics or advertising. It is a static landing page intended for
-          public documentation and Google verification.
-        </p>
-
-        <h2>3. Storage</h2>
-        <p>
-          The public GitLab Pages site stores only static content such as this
-          page and related documents. The actual Family Planner application and
-          any user or calendar data remain on the private self-hosted system and
-          are not stored in this public repository or Pages site unless the owner
-          specifically configures such storage elsewhere.
-        </p>
-        <p>
-          Any data actually stored by the private app, including Google account
-          information or calendar data, is controlled by the owner of the private
-          application and should be documented in the app’s own privacy notice.
-        </p>
-
-        <h2>4. Retention</h2>
-        <p>
-          The public website does not track or retain visitor analytics. The owner
-          should define retention periods for any personally identifiable data kept
-          in the private application, such as Google account records, calendar
-          entries, or household information.
-        </p>
-
-        <h2>5. Sharing</h2>
-        <p>
-          Family Planner does not sell personal information. Information may be
-          shared only with Google as required for authentication or calendar
-          permissions, or with the owner’s chosen hosting or infrastructure
-          providers if those services are used to run the private application.
-        </p>
-        <p>
-          This public site itself does not share personal data with third-party
-          analytics or advertising providers.
-        </p>
-
-        <h2>6. Deletion and access</h2>
-        <p>
-          Users who wish to remove or revoke Google access for the private app
-          should do so through their Google Account permissions settings. The
-          private app owner should also provide a process for deleting any family
-          data stored by the app and for responding to user requests.
-        </p>
-
-        <h2>7. Manual owner actions required</h2>
-        <p>
-          This website and privacy template are intentionally simple. The owner
-          must confirm and complete the following before publishing a live app:
-        </p>
-        <ul>
-          <li>exact Google OAuth and Google Calendar scopes used by the app</li>
-          <li>where the private app stores user and calendar data</li>
-          <li>the retention period for any stored data</li>
-          <li>how account deletion and data removal requests are handled</li>
-          <li>the exact domain and pages to be used in Google Console</li>
-        </ul>
-
-        <h2>8. Contact</h2>
-        <p>
-          For questions about this project or its privacy practices, the owner
-          should provide a contact method in the private application or on a final
-          product site. This public pages repository does not provide user-facing
-          account support.
-        </p>
 
         <p class="muted-note">
-          This is a minimal public policy template. The owner should tailor it to
-          the final implementation of Family Planner before public launch.
+          This notice is intentionally conservative and avoids unsupported claims.
+          Once the owner confirms the implemented app behavior, this text can be
+          updated to match the actual product and published as a final privacy
+          policy.
         </p>
       </div>
     </main>
